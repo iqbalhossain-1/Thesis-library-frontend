@@ -19,7 +19,7 @@ import Cse from "./components/Cse";
 import EEE from "./components/EEE";
 import CE from "./components/CE";
 
-axios.defaults.baseURL = "http://localhost:3000/";
+axios.defaults.baseURL = "https://thesis-project-backend.onrender.com/";
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
