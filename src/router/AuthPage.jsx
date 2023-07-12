@@ -1,11 +1,12 @@
 import React from 'react'
 import {
-    BrowserRouter,
-    Routes,
-    Route,
-  } from "react-router-dom";
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import Login from '../components/Login';
 import Signup from '../components/Signup';
+import BlogDetail from '../components/BlogDetail';
 
 const AuthPage = () => {
   return (

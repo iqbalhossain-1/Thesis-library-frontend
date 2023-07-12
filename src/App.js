@@ -18,6 +18,7 @@ import SubmissionList from './components/SubmissionList';
 import Cse from "./components/Cse";
 import EEE from "./components/EEE";
 import CE from "./components/CE";
+import BlogDetail from "./components/BlogDetail";
 
 axios.defaults.baseURL = "https://thesis-project-backend.onrender.com/";
 
@@ -78,6 +79,11 @@ const App = () => {
       path: "/ce",
       element: <CE isAuth={isAuth} authSetter={authSetter} />,
     },
+    {
+      path: '/blogdescription/:id',
+      element: <BlogDetail></BlogDetail>,
+      loader: ({ params }) => fetch(`http://localhost:400/blogs/${params.id}`)
+    }
   ]);
 
   useEffect(() => {
